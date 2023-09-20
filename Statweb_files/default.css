@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Preahvihear&display=swap");
+:root {
+  --primary: #151414;
+  --secondary: #c71936;
+  --light: #ffffff;
+  --dark: #222121;
+}
+::-moz-selection {
+  color: var(--light);
+  background: var(--secondary);
+}
+::selection {
+  color: var(--light);
+  background: var(--secondary);
+}
+* {
+  font-family: "Preahvihear", sans-serif;
+  font-size: 1.1rem;
+}
+a:hover {
+  color: var(--secondary);
+}
+header {
+  background-color: var(--primary);
+  display: flex;
+  gap: 2rem;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2rem;
+  margin-bottom: 3rem;
+}
+header svg {
+  width: 4rem;
+  height: 4rem;
+  fill: var(--secondary);
+}
+header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+header nav a {
+  color: var(--light);
+  font-weight: bold;
+  padding-inline: 0.5rem;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+footer {
+  background-color: var(--primary);
+  padding: 3rem;
+  color: var(--light);
+  margin-top: 2rem;
+}
+footer nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+footer nav a {
+  color: var(--light);
+  text-decoration: none;
+}
+footer nav a:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.5rem;
+  font-weight: bold;
+}
+footer svg {
+  fill: var(--secondary);
+}
+footer .footer-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+h1 {
+  font-weight: bold;
+  color: var(--secondary) !important;
+}
+h2,
+h3 {
+  font-weight: bold;
+}
+input,
+button {
+  border-radius: 0px !important;
+}
+i {
+  color: var(--secondary) !important;
+  font-size: 2rem;
+}
+.examples .col .card:hover {
+  background-color: #c71936 !important;
+}
+.examples .col .card {
+  transition: 1s all;
+}
+.btn-primary {
+  background-color: var(--secondary) !important;
+  border: var(--secondary) !important;
+}
+.btn-primary:hover {
+  background-color: #851d2e !important;
+}
+.skew {
+  z-index: -5;
+  -ms-transform: rotate(-2deg) skew(-2deg);
+  -webkit-transform: rotate(-2deg) skew(-2deg);
+  background-color: #f8cbcb;
+  overflow: hidden;
+  padding-inline: 4rem;
+  padding-block: 2rem;
+  margin-block: 3rem;
+}
+.example_01 {
+  background-image: url("../images/thomasmore-example.PNG");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.example_02 {
+  background-image: url("../images/gilalee-example.PNG");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.example_03 {
+  background-image: url("../images/ospelen-example.PNG");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.example_04 {
+  background-image: url("../images/demol-example.PNG");
+  background-position: center;
+  background-repeat: no-repeat;
+} /*pwdlvl3:Y6sd%eW*/
+.color-primary {
+  color: var(--primary);
+}
+.color-statweb {
+  color: var(--secondary) !important;
+}
+.bg-statweb {
+  background: var(--secondary) !important;
+}
+.bg-statweb-primary {
+  background: var(--primary) !important;
+}
+nav .active {
+  color: var(--secondary) !important;
+  font-weight: bold;
+  text-decoration: underline;
+  text-underline-offset: 0.5rem;
+}

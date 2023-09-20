@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<!-- saved from url=(0030)https://tm-statweb.be/mail.php -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statweb</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="https://tm-statweb.be/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://tm-statweb.be/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://tm-statweb.be/favicon-16x16.png">
+    <link rel="manifest" href="https://tm-statweb.be/site.webmanifest">
+    <link rel="stylesheet" href="./Statweb_files/bootstrap-icons.css">
+    <link href="./Statweb_files/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="./Statweb_files/default.css">
+    <script async="" src="./Statweb_files/js"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'G-LWS9W1C1KS');
+    </script>
+</head>
+<!--
+            __                       __        __                __      __       
+           / /_____ ___        _____/ /_____ _/ /__      _____  / /_    / /_  ___ 
+          / __/ __ `__ \______/ ___/ __/ __ `/ __/ | /| / / _ \/ __ \  / __ \/ _ \
+         / /_/ / / / / /_____(__  ) /_/ /_/ / /_ | |/ |/ /  __/ /_/ / / /_/ /  __/
+         \__/_/ /_/ /_/     /____/\__/\__,_/\__/ |__/|__/\___/_.___(_)_.___/\___/                                                                        
+-->
+
+<body>
+    <nav class="text-dark p-3 mb-3">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <span class="color-statweb d-flex align-items-center px-5 mb-2 mb-lg-0 text-white text-decoration-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-lightning-charge-fill" viewBox="0 0 16 16">
+                        <path d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09z"></path>
+                    </svg>
+                </span>
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                    <li><a href="https://tm-statweb.be/index.html" class="nav-link px-2 text-white">Modules</a></li>
+                    <li><a href="https://tm-statweb.be/examples.html" class="nav-link px-2 text-white">Examples</a></li>
+                    <li><a href="https://tm-statweb.be/hackthebox.html" class="nav-link px-2 text-white">Hack&nbsp;The&nbsp;Box</a></li>
+                    <li><a href="https://tm-statweb.be/youtube.html" class="nav-link px-2 text-white">YouTube</a></li>
+                    <li><a href="https://tm-statweb.be/links.html" class="nav-link px-2 text-white">Links</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="container">
+        <div class="row">
+            <h1>Send e-mail with PHP</h1>
+            <div class="col-md">
+                <h2>How to use</h2>
+                <ul>
+                    <li>We do not handle <b>GET requests</b></li>
+                    <li>Value of your <b>action</b> attribute in your form should be <a href="https://tm-statweb.be/sendmail.php" target="_blank">https://tm-statweb.be/sendmail.php</a></li>
+                    <li>POST variable <b>'studentemail'</b> is used to send email to, without this POST var set or if the value is not valid the e-mail will not be send (set this input to hidden)</li>
+                    <li>POST variable <b>'subject'</b> is used as e-mail subject, standard is 'No subject'</li>
+                    <li><b>All</b> POST variables used in the form will be listed in the email</li>
+                </ul>
+                <p>Please use and don't abuse <a href="https://tm-statweb.be/sendmail.php" target="_blank">sendmail.php</a>, this is for educational purposes only.</p>
+                <h3>Test form</h3>
+                <p class="mb-0 fw-bold">Configuration</p>
+                <p class="mb-0">Send mail when form is submitted to this address</p>
+                <form action="https://tm-statweb.be/sendmail.php" method="POST">
+                    <input type="text" name="studentemail" class="form-control" placeholder="developer@email.com">
+                    <!-- hide input on screen by renaming attribute "type" to hidden: <input type="hidden" name="studentemail" class="form-control" placeholder="developer@email.com"> -->
+                    <p class="mb-0 fw-bold">Optional fields</p>
+                    <div class="form-group mb-2">
+                        <p class="mb-0">If not given subject will be 'No subject'</p>
+                        <input type="text" name="subject" class="form-control" placeholder="Subject (optional)">
+                    </div>
+                    <div class="form-group mb-2">
+                        <input type="text" name="email" class="form-control" placeholder="E-mail address customer">
+                    </div>
+                    <div class="form-group mb-2">
+                        <textarea name="message" class="form-control" placeholder="Textarea input"></textarea>
+                    </div>
+                    <div class="form-group mb-2">
+                        <input type="text" name="random-thing" class="form-control" placeholder="Text input">
+                    </div>
+                    <div class="form-group mb-2">
+                        <input type="date" name="random-thing2" class="form-control" placeholder="Date input">
+                    </div>
+                    <div class="form-group mb-2">
+                        <input type="number" name="random-thing3" class="form-control" placeholder="Number input">
+                    </div>
+                    <p class="mb-1">Add more fields to expand, all POST keys will be listed in email..</p>
+                    <input type="submit" class="btn btn-success mb-2" value="Submit form / Send e-mail">
+                </form>
+                <h2>Example</h2>
+                <p>Always include 'studentemail' in your form else the mail will not be send.</p>
+                <code>
+                    &lt;form method="post" action="https://tm-statweb.be/sendmail.php"&gt;<br>
+                    &lt;div&gt;<br>
+                    &lt;label for="gebruikersnaam"&gt;Gebruikersnaam:<br>
+                    &lt;input type="email" id="gebruikersnaam" name="gebruikersnaam"&gt;<br>
+                    &lt;/label&gt;<br>
+                    &lt;/div&gt;<br>
+                    &lt;div&gt;<br>
+                    &lt;label for="wachtwoord"&gt;Wachtwoord:<br>
+                    &lt;input type="password" id="wachtwoord" name="wachtwoord"&gt;<br>
+                    &lt;/label&gt;<br>
+                    &lt;/div&gt;<br>
+                    &lt;input type="hidden" name="studentemail" value="niels@tm.be"&gt;<br>
+                    &lt;div&gt;<br>
+                    &lt;input type="submit" value="Aanmelden"&gt;<br>
+                    &lt;/div&gt;<br>
+                    &lt;/form&gt;<br>
+                </code>
+                <code>
+
+                </code>
+            </div>
+            <div class="col-md">
+                <h2>Want to do it yourself?</h2>
+                <p>Copy below code and make a new file <b>sendmail.php</b> on your server. Change the variables and run the page. Do not forget to setup your mailbox first.</p>
+                <code>
+                    &lt;?php<br>
+                    $to = "receiver@mail.com";<br>
+                    $subject = "E-mail subject";<br>
+                    $message = "Hello world!";<br>
+                    $headers = "From: yourname@yourdomainname.be"<br>
+                    mail($to, $subject, $message, $headers);<br>
+                    ?&gt;
+                </code>
+                <p class="mt-2 mb-0 fw-bold">Get POST variables in PHP</p>
+                <p><a href="https://www.php.net/manual/en/reserved.variables.post.php">https://www.php.net/manual/en/reserved.variables.post.php</a>
+                    or be lazy and type <b>$whatever = $_POST["name"]</b>, the attribute name from the HTML will be used.</p>
+                <p>If needed use <a href="https://tm-statweb.be/forms.php" target="_blank">https://tm-statweb.be/forms.php</a> to test the data you send is correct.</p>
+                <p>At this point you can build forms with endless input values and list the values in the e-mail like below:</p>
+                <code>
+                    &lt;?php<br>
+                    $studentemail = htmlspecialchars($_POST['to']);<br>
+                    $subject = "Your subject";<br>
+                    // $subject = htmlspecialchars($_POST['subject']);<br>
+                    $message= "Your message";<br>
+                    // $message= htmlspecialchars($_POST['message']);<br>
+                    $headers[] = 'MIME-Version: 1.0';<br>
+                    $headers[] = 'Content-type: text/html; charset=iso-8859-1';<br>
+                    $headers[] = 'From: Name-here &lt;from@yourdomain.be&gt;';<br>
+                    $headers[] = 'Cc: ccmail@yourdomain.be';<br>
+                    // using mail function and returns boolean<br>
+                    $send = mail($studentemail, $subject, $txt, implode("\r\n", $headers));<br>
+                    if ($send) {<br>
+                    $response = "Mail sent successfully";<br>
+                    } else {<br>
+                    $response = "Mail not sent";<br>
+                    }<br>
+                    echo json_encode($response);<br>
+                    ?&gt;<br>
+                </code>
+                <p class="mt-2">More info about <b>PHP mail()</b> and <b>htmlspecialchars()</b> functions can be found below</p>
+                <ul>
+                    <li><a href="https://www.php.net/manual/en/function.mail.php" target="_blank">https://www.php.net/manual/en/function.mail.php</a></li>
+                    <li><a href="https://www.php.net/manual/en/function.htmlspecialchars.php" target="_blank">https://www.php.net/manual/en/function.htmlspecialchars.php</a></li>
+                    <li><a href="https://www.w3schools.com/Php/func_mail_mail.asp" target="_blank">https://www.w3schools.com/Php/func_mail_mail.asp</a></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+
+</body></html>
