@@ -1,0 +1,16 @@
+label{
+    font-weight: bold;
+}
+input{
+    background-color: green;
+    color: white;
+}
+select{
+    background-color: green;
+    color: white;
+}
+fieldset{
+    border-radius: 25px;
+    border: 2px solid green;
+    width: 300px;
+}
