@@ -1,0 +1,27 @@
+.container{
+    display: flex;
+}
+.container-30{
+    width: 30%;
+    padding: 15px;
+}
+.container-70{
+    width: 70%;
+    padding: 15px;
+}
+
+@media screen and (max-width: 600px) {
+    .container{
+        display: block;
+    }
+    .container-30{
+        width: 100%;
+        padding: 15px;
+
+    }
+    .container-70{
+        width: 100%;
+        padding: 15px;
+
+    }
+}

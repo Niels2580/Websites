@@ -1,0 +1,32 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: rgb(0, 40, 60);
+}
+hr{
+    border: 1px solid rgb(0, 40, 60);
+}
+h1{
+    margin: 0px;
+    padding: 0px;
+    font-size: 2em;
+    color: rgb(250, 100, 50);
+}
+p{
+    margin: 0px;
+    padding: 15px;
+}
+a:hover{
+    color: rgb(250, 100, 50);
+}
+a::after{
+    text-decoration: underline;
+}
+div{
+    background-color: rgb(0, 40, 60);
+    text-align: center;
+}
+.width{
+    width: 200px;
+}
+

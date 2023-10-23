@@ -1,0 +1,43 @@
+body {
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header {
+    width: 100%;
+    padding: 5px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.footer {
+    width: 100%;
+    padding: 5px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+}
+
+.navigation {
+    
+    width: 30%;
+    background-color: grey;
+}
+
+.content {
+    width: 70%;
+}
+
+ul {
+    list-style-type: none;
+}
+div{
+    padding: 5px;
+}

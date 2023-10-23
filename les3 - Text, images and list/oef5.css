@@ -1,0 +1,22 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+li{
+    margin: 0px;
+    padding: 3px;
+}
+ol{
+    background-color: rgb(250, 100, 50);;
+    color: white;
+}
+ul{
+    background-color: rgb(0, 40, 60);
+}
+.container{
+    padding: 20px;
+    width: 400px;
+}
+img{
+    width: 400px;
+}

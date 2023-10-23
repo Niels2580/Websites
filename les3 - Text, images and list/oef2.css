@@ -1,0 +1,18 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+h1{
+    margin: 0px;
+    padding: 0px;
+    font-size: 2em;
+    color: rgb(250, 100, 50);
+}
+hr{
+    border: 1px solid rgb(0, 40, 60);
+}
+img{
+    border-radius: 5%;
+    margin: 15px;
+    float: left;
+}

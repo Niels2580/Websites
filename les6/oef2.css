@@ -1,0 +1,25 @@
+.grid-container {
+    display: grid;
+   
+    grid-gap: 10px;
+  }
+  .item {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+    
+  }
+
+  .item:nth-child(1) {
+    grid-column: span 3; /* Make the first item span all three columns */
+    
+  }
+  .item:nth-child(2) {
+    grid-column: span 1; /* Make the second item span only one column (200px wide) */
+  }
+  .item:nth-child(3){
+    grid-column: span 2;
+  }
+  .item:nth-child(4){
+    grid-column: span 3;
+  }

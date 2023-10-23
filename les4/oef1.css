@@ -1,0 +1,19 @@
+:root{
+    --blauw: rgb(0, 40, 60);
+}
+
+hr{
+    border: 1px solid var(--blauw);
+}
+table{
+    border-collapse: collapse;
+    
+}
+th, td{
+    padding: 15px;
+    border: 1px solid grey;
+} 
+th{
+    background-color: var(--blauw);
+    color: white;
+}

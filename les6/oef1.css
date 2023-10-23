@@ -1,0 +1,39 @@
+/* Path: les6/oef2.css */
+body {
+    background-image: url("compas.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.noord {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+}
+  
+.oost {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: white;
+}
+  
+.zuid {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+}
+  
+.west {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: white;
+}
+  
